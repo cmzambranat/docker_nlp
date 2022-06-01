@@ -7,7 +7,7 @@ jobs:
    steps:
      - checkout
      - run:
-           name: "Build NLP Container"
+           name: "Build NLP Container minor"
            command: |
             docker build -f Dockerfile.nlp -t cmzambranat/nlp:4.2.0 .
      - deploy:
